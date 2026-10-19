@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amir Boukhchina · CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1b30;--bg2:#10294a;--ink:#f2efe6;--mute:#9db0c6;--teal:#17b8aa;--amber:#ffb454;--line:rgba(255,255,255,.12);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.55 'Space Grotesk',system-ui,sans-serif;overflow-x:hidden}
+.h{font-family:Anton,Impact,'Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.01em;line-height:.98}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:rgba(11,27,48,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.live{display:flex;align-items:center;gap:8px;font:700 12px 'Space Grotesk',sans-serif;letter-spacing:.14em}
+.live i{width:9px;height:9px;border-radius:50%;background:#ff4d4d;animation:p 1.2s infinite}
+@keyframes p{50%{opacity:.25}}
+.btn{display:inline-block;background:var(--amber);color:#1a1205;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px;padding:11px 18px;border-radius:99px;text-decoration:none}
+.btn.o{background:none;color:var(--ink);border:1.5px solid var(--line)}
+section{padding:56px 20px;max-width:760px;margin:auto}
+.hero{padding-top:44px;background:radial-gradient(120% 60% at 50% 0,rgba(23,184,170,.28),transparent 60%)}
+.tag{display:inline-block;border:1px solid var(--teal);color:var(--teal);font-size:11px;letter-spacing:.2em;padding:6px 12px;border-radius:99px;text-transform:uppercase}
+h1{font-size:clamp(56px,17vw,120px);margin:18px 0 14px}
+h1 span{color:var(--teal);display:block}
+.lead{color:var(--mute);font-size:18px;max-width:520px}
+.eq{display:flex;gap:5px;align-items:flex-end;height:46px;margin:26px 0}
+.eq b{width:7px;background:linear-gradient(var(--teal),var(--amber));border-radius:3px;animation:e 1s ease-in-out infinite alternate}
+@keyframes e{from{height:8px}to{height:46px}}
+.ticket{margin-top:30px;display:grid;grid-template-columns:1fr auto;border:1.5px dashed var(--amber);border-radius:14px;overflow:hidden;background:rgba(255,180,84,.06)}
+.ticket div{padding:16px 18px}
+.ticket small{display:block;color:var(--amber);letter-spacing:.2em;font-size:11px;text-transform:uppercase}
+.ticket strong{font-size:18px}
+.ticket .r{border-left:1.5px dashed var(--amber);text-align:center;display:flex;flex-direction:column;justify-content:center}
+.ticket .r strong{font:32px Anton,Impact,sans-serif;color:var(--amber)}
+h2{font-size:clamp(34px,9vw,52px);margin-bottom:6px}
+h2+p{color:var(--mute);margin-bottom:26px}
+.trk{display:grid;grid-template-columns:44px 1fr;gap:6px 14px;padding:20px 0;border-top:1px solid var(--line)}
+.trk .n{font:28px Anton,Impact,sans-serif;color:var(--teal)}
+.trk h3{font-size:19px;line-height:1.25}
+.trk em{display:block;color:var(--mute);font-style:normal;font-size:14px}
+.trk .d{color:var(--amber);font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-top:2px}
+.trk ul{grid-column:2;padding-left:18px;color:#d5dde8;font-size:15px}
+.top{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 22px;padding:10px 16px;font-size:14px;font-weight:500;background:var(--bg2);border-bottom:1px solid var(--line)}
+.top a{color:var(--ink);text-decoration:none}
+.top a:hover{color:var(--amber)}
+.hook{margin:22px 0 2px;max-width:560px;font-size:17px;color:var(--ink)}
+.hook b{display:block;font:400 clamp(28px,8vw,42px)/1.05 Anton,Impact,sans-serif;text-transform:uppercase;color:var(--amber);margin-bottom:10px}
+.card ul{padding-left:18px;color:#d5dde8;font-size:15px;margin-top:8px}
+.card li{margin:7px 0}
+.card li strong{color:var(--ink)}
+.atouts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.atouts div{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14px}
+.atouts div:before{content:"★ ";color:var(--amber)}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chips span{padding:9px 15px;border-radius:99px;background:var(--bg2);border:1px solid var(--line);font-size:14px}
+.chips span:nth-child(3n){border-color:var(--teal)}
+.grid{display:grid;gap:14px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:20px}
+.card h3{font-size:18px;margin-bottom:4px}
+.card p{color:#d5dde8;font-size:15px}
+.card small{color:var(--amber);letter-spacing:.14em;font-size:11px;text-transform:uppercase}
+.bar{margin:12px 0}
+.bar div{display:flex;justify-content:space-between;font-size:14px}
+.bar i{display:block;height:6px;border-radius:9px;background:rgba(255,255,255,.1);margin-top:5px;overflow:hidden}
+.bar i u{display:block;height:100%;background:var(--teal);border-radius:9px;width:var(--w);transition:width 1.2s ease}
+.js .bar i u{width:0}
+.js .show .bar i u{width:var(--w)}
+.contact{text-align:center;background:linear-gradient(180deg,transparent,rgba(23,184,170,.18))}
+.contact .h{font-size:clamp(40px,12vw,76px);margin-bottom:14px}
+.contact .row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:22px}
+footer{text-align:center;color:var(--mute);font-size:12px;padding:20px 20px 30px}
+.js .rv{opacity:0;transform:translateY(22px);transition:.7s}
+.js .rv.show{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.eq b,.live i{animation:none}}
+</style>
+</head>
+<body>
+<div class="top"><a href="tel:+33775067636">📞 07 75 06 76 36</a><a href="mailto:amirboukhchina07@gmail.com">✉️ amirboukhchina07@gmail.com</a></div>
+<nav><div class="live"><i></i>ON AIR · ALTERNANCE 2026</div><a class="btn" href="#contact">Me recruter</a></nav>
+<section class="hero">
+<p class="hook"><b>Me recruter, c'est une décision que vous ne regretterez pas.</b></p>
+<span class="tag">Tournée 2026 · Nice &amp; alentours</span>
+<h1 class="h">Amir<span>Boukhchina</span></h1>
+<p class="lead">Assistant manager, développement commercial &amp; événementiel. Le sens du terrain d'un sportif, l'oreille d'un artiste.</p>
+<div class="eq" aria-hidden="true"><b style="animation-delay:-.1s"></b><b style="animation-delay:-.5s"></b><b style="animation-delay:-.3s"></b><b style="animation-delay:-.8s"></b><b style="animation-delay:-.2s"></b><b style="animation-delay:-.6s"></b><b style="animation-delay:-.4s"></b><b style="animation-delay:-.9s"></b><b style="animation-delay:-.15s"></b></div>
+<a class="btn" href="#tracks">Lancer le show ↓</a>
+<div class="ticket"><div><small>Pass alternance</small><strong>Mastère Stratégie d'Entreprise · ISCAE Nice</strong><br><span style="color:var(--mute);font-size:14px">2 jours école / 3 jours entreprise</span></div><div class="r"><small>Dès</small><strong>SEPT.<br>2026</strong></div></div>
+</section>
+<section id="tracks" class="rv">
+<h2 class="h">La tracklist</h2><p>Mes expériences, une piste après l'autre.</p>
+<div class="trk"><span class="n">01</span><div><h3>Employé polyvalent en restauration</h3><em>Mange Moi · Nice</em><div class="d">15 août – 30 sept. 2026</div></div><ul><li>Accueil des clients et prise de commande</li><li>Service en salle et en comptoir, conseil sur la carte</li><li>Préparation et dressage des plats, aide en cuisine</li><li>Tenue de caisse et encaissement</li><li>Mise en place, réassort et gestion des stocks</li><li>Nettoyage et entretien de la salle, de la cuisine et du matériel dans le respect des règles d'hygiène</li><li>Gestion du rush et travail d'équipe avec les collègues</li></ul></div>
+<div class="trk"><span class="n">02</span><div><h3>Assistant Manager – Événementiel</h3><em>Salle des Fêtes · Tunis</em><div class="d">Janv. – Juil. 2026</div></div><ul><li>Organisation de mariages et réceptions : plannings, prestataires</li><li>Coordination du personnel, gestion des imprévus</li><li>Suivi de la relation client et appui administratif</li></ul></div>
+<div class="trk"><span class="n">03</span><div><h3>Street Marketing &amp; Promotion terrain</h3><em>ICS Agency · Toulouse</em><div class="d">Sept. 2025 – Fév. 2026</div></div><ul><li>Promotion d'offres auprès du grand public</li><li>Accueil et fidélisation des prospects, valorisation de la marque</li></ul></div>
+<div class="trk"><span class="n">04</span><div><h3>Employé polyvalent</h3><em>Ebisu · Toulouse</em><div class="d">Déc. 2024 – Avr. 2025</div></div><ul><li>Relation client, caisse, mise en place, travail d'équipe</li></ul></div>
+<div class="trk"><span class="n">05</span><div><h3>Stagiaire – Commercial &amp; relation client</h3><em>Nouvel Cars · Tunis</em><div class="d">Juin – Juil. 2023</div></div><ul><li>Conseil client, devis, négociation et conclusion des ventes</li></ul></div>
+<div class="trk"><span class="n">06</span><div><h3>Stagiaire – Tourisme &amp; relation client</h3><em>Nouvel Tours · Tunis</em><div class="d">Juin – Août 2021</div></div><ul><li>Réservation de billets, réclamations, planification de voyages</li></ul></div>
+</section>
+<section class="rv"><h2 class="h">La setlist</h2><p>Ce que je sais jouer.</p>
+<div class="chips"><span>Développement commercial</span><span>Relation client</span><span>Gestion &amp; suivi d'activité</span><span>Organisation de projets</span><span>Coordination d'équipe</span><span>Communication de marque</span><span>Promotion d'offres</span><span>Réseaux sociaux</span><span>Excel avancé (TCD)</span><span>PowerPoint</span><span>Word</span><span>Montage vidéo</span></div>
+<h2 class="h" style="margin-top:44px">Mes atouts</h2><p>Ce que mes équipes retrouvent chez moi.</p>
+<div class="atouts"><div>Sens du contact</div><div>Terrain &amp; promotion de marque</div><div>Esprit d'équipe &amp; compétition</div><div>Rigueur et sens du détail</div><div>Ouverture interculturelle</div><div>Adaptabilité</div></div></section>
+<section class="rv"><h2 class="h">Backstage</h2><p>Ce qui fait la différence hors CV.</p><div class="grid">
+<div class="card"><small>Musique</small><h3>Artiste indépendant &amp; home studio</h3><ul><li>J'écris, compose et produis mes propres morceaux</li><li>Home studio équipé de matériel professionnel (micro, carte son, enceintes de monitoring) et du logiciel Studio One</li><li>J'enregistre aussi pour d'autres artistes</li><li>Je filme et monte seul mes vidéos</li><li>Distribution via DistroKid (YouTube, Spotify…), diffusion sur TikTok, Instagram et Facebook</li></ul></div>
+<div class="card"><small>Sport</small><h3>Handball depuis 11 ans</h3><ul><li>Pratiqué depuis l'âge de 11 ans</li><li>Équipe professionnelle en Tunisie : championnat remporté</li><li>Équipe universitaire de l'UT2J pendant 3 ans</li></ul></div>
+<div class="card"><small>Engagements</small><h3>Associatif</h3><ul><li><strong>Journées Culturelles et Économiques de la Tunisie à Toulouse</strong> · 2023 – 2025</li><li><strong>JCI Junior El Menzah</strong>, membre fondateur · 2019 – 2020</li><li><strong>Interact Club Tunis Belvedere</strong> · 2020 – 2022</li></ul></div>
+</div></section>
+<section class="rv" id="studies"><h2 class="h">Formation &amp; langues</h2><p>Mon parcours et mes langues.</p><div class="grid">
+<div class="card"><small>Dès sept. 2026</small><h3>Mastère Stratégie d'Entreprise – Entrepreneuriat &amp; Innovation Durable</h3><p>ISCAE Nice, en alternance</p></div>
+<div class="card"><small>2026</small><h3>Licence Gestion et Sciences Humaines et Sociales</h3><p>Université Toulouse 2 Jean Jaurès</p></div>
+<div class="card"><small>2021</small><h3>Baccalauréat général français</h3><p>Lycée René Descartes, Tunisie</p></div>
+<div class="card"><div class="bar"><div><span>Français</span><span>C2</span></div><i><u style="--w:100%"></u></i></div><div class="bar"><div><span>Arabe</span><span>C2</span></div><i><u style="--w:100%"></u></i></div><div class="bar"><div><span>Anglais</span><span>B2</span></div><i><u style="--w:70%"></u></i></div></div>
+</div></section>
+<section class="contact rv" id="contact"><span class="tag">Dernier titre</span><h2 class="h" style="margin-top:16px">Montons le<br>show ensemble</h2><p style="color:var(--mute)">Je recherche une alternance pour contribuer concrètement au développement et à la stratégie de votre entreprise.</p><div class="row"><a class="btn" href="tel:+33775067636">07 75 06 76 36</a><a class="btn o" href="mailto:amirboukhchina07@gmail.com">amirboukhchina07@gmail.com</a></div></section>
+<footer>Amir Boukhchina · Nice et alentours · Disponible dès septembre 2026</footer>
+<script>
+document.documentElement.classList.add('js');
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('show');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
