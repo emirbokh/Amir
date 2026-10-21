@@ -18,6 +18,10 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;just
 .btn{display:inline-block;background:var(--amber);color:#1a1205;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px;padding:11px 18px;border-radius:99px;text-decoration:none}
 .btn.o{background:none;color:var(--ink);border:1.5px solid var(--line)}
 section{padding:56px 20px;max-width:760px;margin:auto}
+.portrait-wrap{display:flex;justify-content:center;margin:0 0 28px}
+.portrait{display:block;width:clamp(140px,38vw,210px);aspect-ratio:4/5;object-fit:cover;object-position:center 25%;border:3px solid var(--teal);border-radius:22px;box-shadow:0 12px 36px rgba(0,0,0,.28);background:var(--bg2)}
+.portrait[hidden]{display:none}
+@media(max-width:420px){.portrait{width:148px;border-radius:18px}}
 .hero{padding-top:44px;background:radial-gradient(120% 60% at 50% 0,rgba(23,184,170,.28),transparent 60%)}
 .tag{display:inline-block;border:1px solid var(--teal);color:var(--teal);font-size:11px;letter-spacing:.2em;padding:6px 12px;border-radius:99px;text-transform:uppercase}
 h1{font-size:clamp(56px,17vw,120px);margin:18px 0 14px}
@@ -78,6 +82,7 @@ footer{text-align:center;color:var(--mute);font-size:12px;padding:20px 20px 30px
 <div class="top"><a href="tel:+33775067636">📞 07 75 06 76 36</a><a href="mailto:amirboukhchina07@gmail.com">✉️ amirboukhchina07@gmail.com</a></div>
 <nav><div class="live"><i></i>ON AIR · ALTERNANCE 2026</div><a class="btn" href="#contact">Me recruter</a></nav>
 <section class="hero">
+<div class="portrait-wrap"><img class="portrait" src="./photo.jpeg" alt="Photo de profil d’Amir Boukhchina" width="600" height="750" onerror="this.hidden=true"></div>
 <p class="hook"><b>Me recruter, c'est une décision que vous ne regretterez pas.</b></p>
 <span class="tag">Tournée 2026 · Nice &amp; alentours</span>
 <h1 class="h">Amir<span>Boukhchina</span></h1>
