@@ -19,9 +19,9 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;just
 .btn.o{background:none;color:var(--ink);border:1.5px solid var(--line)}
 section{padding:56px 20px;max-width:760px;margin:auto}
 .portrait-wrap{display:flex;justify-content:center;margin:0 0 28px}
-.portrait{display:block;width:clamp(140px,38vw,210px);aspect-ratio:4/5;object-fit:cover;object-position:center 25%;border:3px solid var(--teal);border-radius:22px;box-shadow:0 12px 36px rgba(0,0,0,.28);background:var(--bg2)}
+.portrait{display:block;width:clamp(100px,24vw,150px);height:clamp(125px,30vw,188px);aspect-ratio:4/5;object-fit:contain;object-position:center;background:#f4f4f4;border:2px solid var(--teal);border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.22)}
 .portrait[hidden]{display:none}
-@media(max-width:420px){.portrait{width:148px;border-radius:18px}}
+@media(max-width:420px){.portrait{width:108px;height:135px;border-radius:12px}}
 .hero{padding-top:44px;background:radial-gradient(120% 60% at 50% 0,rgba(23,184,170,.28),transparent 60%)}
 .tag{display:inline-block;border:1px solid var(--teal);color:var(--teal);font-size:11px;letter-spacing:.2em;padding:6px 12px;border-radius:99px;text-transform:uppercase}
 h1{font-size:clamp(56px,17vw,120px);margin:18px 0 14px}
