@@ -20,9 +20,9 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;just
 .btn.o{background:#10111a;color:var(--ink);border:1px solid var(--line);box-shadow:none}
 section{padding:76px 22px;max-width:1000px;margin:auto}#about,#tracks,#skills,#studies{scroll-margin-top:80px}
 .portrait-wrap{display:flex;justify-content:center;margin:0 0 30px}
-.portrait{display:block;width:clamp(170px,18vw,210px);height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 25%;background:#bceaff;border:0;border-radius:14px;box-shadow:0 0 22px rgba(0,195,255,.28)}
+.portrait{display:block;width:clamp(170px,18vw,210px);height:clamp(170px,18vw,210px);aspect-ratio:1/1;object-fit:cover;object-position:center 25%;background:#bceaff;border:3px solid rgba(82,208,255,.8);border-radius:50%;box-shadow:0 0 22px rgba(0,195,255,.35),0 0 36px rgba(45,108,255,.25)}
 .portrait[hidden]{display:none}
-@media(max-width:420px){.portrait{width:156px;height:auto}}
+@media(max-width:420px){.portrait{width:170px;height:170px}}
 .hero{min-height:calc(100vh - 54px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:66px 22px 76px;background:radial-gradient(ellipse 38% 28% at 50% 39%,rgba(0,180,255,.13),transparent 75%);position:relative;overflow:hidden}
 .hero:before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.34;background-image:radial-gradient(circle at 15% 22%,#00d9ff 1px,transparent 2px),radial-gradient(circle at 82% 30%,#00d9ff 1px,transparent 2px),radial-gradient(circle at 25% 72%,#555cff 1px,transparent 2px),radial-gradient(circle at 72% 83%,#00d9ff 1px,transparent 2px);background-size:280px 220px,360px 300px,420px 260px,300px 360px}.hero>*{position:relative;z-index:1}.hero .hook{display:none}
 .tag{display:inline-block;border:1px solid rgba(8,217,245,.45);color:var(--teal);font-size:11px;letter-spacing:.16em;padding:6px 12px;border-radius:99px;text-transform:uppercase}
